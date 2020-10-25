@@ -1,9 +1,11 @@
 import React from 'react';
+import {Hero, About} from '../components/HomeContent';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home!</h1>
+    <div style={{backgroundColor: '#444444'}}>
+      <Hero/>
+      <About/>
     </div>
   );
 }
