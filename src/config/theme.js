@@ -1,4 +1,9 @@
-export const primaryColour = '#fff';
-export const secondaryColour = '#444444';
-export const accentColour = '#256ce1';
-export const textColour = '#fff';
+export default{
+    colors:{
+        primary: '#FFF',
+        secondary: '#FFCC00',
+        accent: '#256CE1',
+        text: '#191919'
+    }
+};
+

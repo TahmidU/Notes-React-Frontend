@@ -11,7 +11,8 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "styled-components-grid": "^2.2.2"
   },
   "scripts": {
     "start": "react-scripts start",

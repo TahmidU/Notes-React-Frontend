@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 import {NavLink as Link} from 'react-router-dom';
 
-export const BtnExtern = styled.div`
+export const BtnMenu = styled.div`
     display: flex;
     align-items: center;
 `;
 
-export const BtnTextLink = styled(Link)`
+export const BtnLink = styled(Link)`
     border-radius: 4px;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    background: #256ce1;
+    background: ${props => props.theme.colors.accent};
     padding: 8px 16px;
-    color: #fff;
+    color: ${props => props.theme.colors.primary};
     outline: none;
     border: none;
     cursor: pointer;
@@ -22,7 +22,7 @@ export const BtnTextLink = styled(Link)`
     &:hover
     {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        background: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.text};
     }
 `;

@@ -6,10 +6,10 @@
             <rect x="1.677" y="1.423" width="37.199" height="37.199" style="fill:rgb(255,204,0);stroke:white;stroke-width:0.42px;"/>
         </g>
         <g transform="matrix(0,-1,1,0,7.83736,33.8234)">
-            <path d="M32.427,13.357L32.427,30.74L15.044,30.74L32.427,13.357Z" style="fill:rgb(68,68,68);stroke:white;stroke-width:0.42px;"/>
+            <path d="M32.427,13.357L32.427,30.74L15.044,30.74L32.427,13.357Z" style="fill:rgb(25,25,25);stroke:white;stroke-width:0.42px;"/>
         </g>
     </g>
-    <g transform="matrix(0.428842,0,0,0.428842,31.8204,21.9834)">
-        <text x="47.151px" y="15.641px" style="font-family:'Bahnschrift', sans-serif;font-size:58.296px;fill:rgb(68,68,68);">Notes</text>
+    <g transform="matrix(0.428842,0,0,0.428842,29.8204,21.9834)">
+        <text x="47.151px" y="15.641px" style="font-family:'Bahnschrift', sans-serif;font-size:58.296px;fill:rgb(25,25,25);">Notes</text>
     </g>
 </svg>
