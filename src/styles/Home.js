@@ -41,17 +41,20 @@ export const HeroTitleBlock = styled.div`
 
 export const AboutBlock = styled.div`
     margin-top: 48px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    background-color: ${props => props.theme.colors.primary};
 
     & > h1{
+        padding-bottom: 24px;
         color: ${props => props.theme.colors.text};
-        margin-top: 24px;
         margin-bottom: 36px;
         text-align: center;
     }
 `;
 
 export const GridUnit = styled(Grid.Unit)`
+    margin-bottom: 48px;
+
     & > div{
         display: flex;
         align-items: center;

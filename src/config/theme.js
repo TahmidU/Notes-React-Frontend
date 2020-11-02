@@ -3,7 +3,8 @@ export default{
         primary: '#FFF',
         secondary: '#FFCC00',
         accent: '#256CE1',
-        text: '#191919'
+        text: '#191919',
+        fade: '#686868'
     }
 };
 
