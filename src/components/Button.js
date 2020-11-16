@@ -11,8 +11,9 @@ export const BtnLink = styled(Link)`
     display: inline-block;
     align-items: center;
     background: ${props => props.theme.colors.accent};
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     color: ${props => props.theme.colors.primary};
+    font-size: 1rem;
     outline: none;
     border: none;
     cursor: pointer;
@@ -25,4 +26,5 @@ export const BtnLink = styled(Link)`
         background: ${props => props.theme.colors.primary};
         color: ${props => props.theme.colors.text};
     }
+
 `;

@@ -2,20 +2,34 @@ import styled from 'styled-components';
 import {NavLink as Link} from 'react-router-dom';
 
 export const FooterBlock = styled.div`
-    & > footer{
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-bottom: 48px;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: ${props => props.theme.colors.primary};
+    position: relative;
+    bottom: 0;
+    padding-top: 2.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    background-color: ${props => props.theme.colors.primary};
 
+    @media screen and (max-width: 768px){
+        font-size: 0.625rem;
+    }
+
+    & > footer{
             & > div{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+            }
+
+            @media screen and (max-width: 768px)
+            {
+                & > div{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
     }
 `;
@@ -32,14 +46,18 @@ export const FooterLink = styled(Link)`
 
 export const FooterMenu = styled.div`
     display:flex;
-    margin-right: 24px;
+    justify-content: space-between;
     white-space: nowrap;
+
+    @media screen and (max-width: 768px){
+        padding-bottom: 1rem;
+    }
 `;
 
 export const Line = styled.hr`
-    height: 2px;
+    height: 0.125rem;
     border-width: 0;
     color: ${props => props.theme.colors.fade};
     background-color: ${props => props.theme.colors.fade};
-    margin-bottom: 36px;
+    margin-bottom: 1.5rem;
 `;

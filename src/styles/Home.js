@@ -3,72 +3,174 @@ import Grid from 'styled-components-grid';
 
 // --- Hero Styles ---
 
-export const HomeContentBlock = styled.div`
-    background-color: ${props => props.theme.colors.secondary};
+export const HomeContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    background-color: ${props => props.theme.colors.primary};
 `;
 
 export const HeroBlock = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-`;
+    height: 100%;
+    width: 100%;
+    background-color: ${props => props.theme.colors.secondary};
 
-export const HeroTitleBlock = styled.div`
-    margin-top: 24px;
-    text-align: center;
-
-    & > h1{
-        color: ${props => props.theme.colors.text};
-        margin-bottom: 24px; 
-        display: block;
+    .hero_content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
     }
 
-    @media screen and (min-width: 769px)
-    {
-        width: 40%;
-        font-size: 20px;
+    .hero_subject{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hero_title_block{ 
+        width: 60%;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 1rem;
+
+        & > h1{
+            margin-bottom: 1.5rem; 
+            color: ${props => props.theme.colors.text};
+        }
+
+        @media screen and (max-width: 768px)
+        {
+            width:80%;
+            font-size: 0.625rem;
+        }
+    }
+
+    .hero_image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        height: 500px;
+    }
+
+    .hero_image img{
+        width: 100%;
+        height: auto;
     }
 
     @media screen and (max-width: 768px)
     {
-        width:80%;
-        font-size: 10px;
+        .hero_content{
+            flex-direction: column-reverse;
+            padding: 2rem;
+        }
+
+        .hero_image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+        }
     }
+`;
+
+export const HeroTitleBlock = styled.div`
+
 `;
 
 // --- About Styles ---
 
 export const AboutBlock = styled.div`
-    margin-top: 48px;
-    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 60%;
+    flex-grow: 1;
+    font-size: 1rem;
+    
+    @media screen and (max-width: 768px)
+    {
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        font-size: 0.6rem;
+    }
+`;
+
+export const AboutContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.25px;
     background-color: ${props => props.theme.colors.primary};
 
     & > h1{
-        padding-bottom: 24px;
+        padding-bottom: 2.25rem;
         color: ${props => props.theme.colors.text};
-        margin-bottom: 36px;
         text-align: center;
+    }
+
+    @media screen and (max-width: 768px)
+    {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-bottom: 0rem;
     }
 `;
 
 export const GridUnit = styled(Grid.Unit)`
-    margin-bottom: 48px;
+    padding: 1rem;
 
     & > div{
         display: flex;
         align-items: center;
-        justify-content: center;
         color: ${props => props.theme.colors.text};
-        margin-bottom: 12px;
+        padding-bottom: 0.375rem;
+        padding-top: 0.375rem;
 
-        & > p{
-            margin-left: 10px;
+        & > img{
+            align-self: left;
         }
     }
-`;
 
-export const GridParagraph = styled.p`
-    text-align: center;
-    width: 40%;
+    .grid_image{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .grid_title{
+        margin-left: 0.625rem;
+        font-size: 1rem;
+    }
+
+    .grid_paragraph{
+        font-size: 1rem;
+        margin-left: 0.625rem;
+    }
+
+    @media screen and (max-width: 768px){
+        padding: 0rem;
+
+        .grid_image{
+            height: 2rem;
+            width: 2rem;
+        }
+
+        .grid_title{
+            margin-left: 0.625rem;
+            font-size: 0.625rem;
+        }
+
+        .grid_paragraph{
+            font-size: 0.625rem;
+            margin-left: 0.625rem;
+        }
+    }
 `;

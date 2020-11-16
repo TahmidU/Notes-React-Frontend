@@ -11,7 +11,9 @@ export class Navbar extends Component {
             <>
               <Nav>
                 <NavBrand to='/'>
-                  <img width='120' height='40' src={require('../logo.svg')} alt='logo' />
+                  <div className='nav_icon_container'>
+                    <img src={require('../logo.svg')} alt='logo' />
+                  </div>
                 </NavBrand>
                 <Bars />
                 <NavMenu>
