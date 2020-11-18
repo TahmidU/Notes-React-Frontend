@@ -27,7 +27,7 @@ const Home = () => (
             <AboutContent>
             <h1>About</h1>
             <Grid>
-              <GridUnit size={1 / 2}>
+              <GridUnit size={{desktop: 1 / 2, mobile: 1/1}}>
                 <div>
                   <div className='grid_image'>
                     <img src={require('../img/about_free.svg')} alt='free' />
@@ -40,7 +40,7 @@ const Home = () => (
                   </p>
                 </div>
               </GridUnit>
-              <GridUnit size={1 / 2}>
+              <GridUnit size={{desktop: 1 / 2, mobile: 1/1}}>
                 <div>
                   <div className='grid_image'>
                     <img src={require('../img/about_map.svg')} alt='map' />
@@ -53,7 +53,7 @@ const Home = () => (
                   </p>
                 </div>
                 </GridUnit>
-                <GridUnit size={1 / 2}>
+                <GridUnit size={{desktop: 1 / 2, mobile: 1/1}}>
                 <div>
                   <div className='grid_image'>
                     <img src={require('../img/about_design.svg')} alt='free' />
@@ -66,7 +66,7 @@ const Home = () => (
                   </p>
                 </div>
               </GridUnit>
-              <GridUnit size={1 / 2}>
+              <GridUnit size={{desktop: 1 / 2, mobile: 1/1}}>
                 <div>
                   <div className='grid_image'>
                     <img src={require('../img/about_organised.svg')} alt='map' />

@@ -41,12 +41,6 @@ export const HeroBlock = styled.div`
             margin-bottom: 1.5rem; 
             color: ${props => props.theme.colors.text};
         }
-
-        @media screen and (max-width: 768px)
-        {
-            width:80%;
-            font-size: 0.625rem;
-        }
     }
 
     .hero_image{
@@ -69,6 +63,11 @@ export const HeroBlock = styled.div`
             padding: 2rem;
         }
 
+        .hero_title_block{
+            width:100%;
+            font-size: 1rem;
+        }
+
         .hero_image{
             display: flex;
             justify-content: center;
@@ -89,14 +88,13 @@ export const AboutBlock = styled.div`
     display: flex;
     align-items: center;
     align-self: center;
-    width: 60%;
+    width: 80%;
     flex-grow: 1;
     font-size: 1rem;
     
     @media screen and (max-width: 768px)
     {
         align-items: center;
-        align-self: center;
         width: 100%;
         font-size: 0.6rem;
     }
@@ -105,15 +103,16 @@ export const AboutBlock = styled.div`
 export const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
-    padding-top: 2.25rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 2.25px;
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2.5px;
     background-color: ${props => props.theme.colors.primary};
 
     & > h1{
         padding-bottom: 2.25rem;
         color: ${props => props.theme.colors.text};
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -156,21 +155,11 @@ export const GridUnit = styled(Grid.Unit)`
     }
 
     @media screen and (max-width: 768px){
-        padding: 0rem;
 
         .grid_image{
             height: 2rem;
             width: 2rem;
         }
 
-        .grid_title{
-            margin-left: 0.625rem;
-            font-size: 0.625rem;
-        }
-
-        .grid_paragraph{
-            font-size: 0.625rem;
-            margin-left: 0.625rem;
-        }
     }
 `;
