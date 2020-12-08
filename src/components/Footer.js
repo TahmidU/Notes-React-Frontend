@@ -13,9 +13,9 @@ export class Footer extends Component
                     <div>
                         <p>@2020 Tahmid Uddin. All rights reserved.</p>
                         <FooterMenu>
-                            <FooterLink to='/' activeStyle>Security</FooterLink>
-                            <FooterLink to='/' activeStyle>Legal</FooterLink>
-                            <FooterLink to='/' activeStyle>Privacy</FooterLink>
+                            <FooterLink to='/security' activeStyle>Security</FooterLink>
+                            <FooterLink to='/legal' activeStyle>Legal</FooterLink>
+                            <FooterLink to='/privacy' activeStyle>Privacy</FooterLink>
                         </FooterMenu>
                     </div>
                 </footer>

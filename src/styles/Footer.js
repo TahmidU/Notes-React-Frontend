@@ -57,7 +57,7 @@ export const FooterMenu = styled.div`
 export const Line = styled.hr`
     height: 0.125rem;
     border-width: 0;
-    color: ${props => props.theme.colors.fade};
-    background-color: ${props => props.theme.colors.fade};
+    color: ${props => props.theme.colors.line};
+    background-color: ${props => props.theme.colors.line};
     margin-bottom: 1.5rem;
 `;

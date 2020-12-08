@@ -5,7 +5,7 @@ import {BtnLink, BtnMenu} from '../components/Button';
 
 export const Nav = styled.nav`
     background: ${props => props.theme.colors.primary};
-    height: 6.25rem;
+    height: 6rem;
     display: flex;
     z-index: 10;
 `;
