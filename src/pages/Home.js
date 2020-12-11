@@ -27,9 +27,6 @@ const Home = () => (
                 <img src={require('../img/hero_image.svg')} alt='hero_image'/>
               </div>
             </div>
-            <div>
-              <p>SCROLL DOWN TO CONTINUE...</p>
-            </div>
           </HeroBlock>
           <AboutBlock>
             <div className='about_content'>

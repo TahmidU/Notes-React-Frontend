@@ -7,7 +7,7 @@ export const HeroBlock = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
+    //gap: 10rem;
     min-height: 90vh;
     width: 100%;
     background-color: ${props => props.theme.colors.secondary};
@@ -18,6 +18,7 @@ export const HeroBlock = styled.div`
         flex-direction: row;
         align-items: center;
         padding: 1rem;
+        margin-top: 4rem;
     }
 
     .hero_subject{
@@ -34,7 +35,7 @@ export const HeroBlock = styled.div`
 
         & > h1{
             text-align: left;
-            font-size: 4rem;
+            font-size: 4vw;
             font-weight: bold;
             margin-bottom: 1.5rem; 
             color: ${props => props.theme.colors.text};
@@ -42,7 +43,7 @@ export const HeroBlock = styled.div`
 
         & > h2{
             text-align: left;
-            font-size: 1.5rem;
+            font-size: 1.5vw;
             font-weight: 1;
             margin-bottom: 1.5rem; 
             color: ${props => props.theme.colors.text};
@@ -54,8 +55,8 @@ export const HeroBlock = styled.div`
         justify-content: center;
         align-items: center;
         flex-shrink: 1;
-        width: 900px;
-        height: 500px;
+        width: 50vw;
+        height: 50vh;
     }
 
     .hero_image img{
@@ -67,6 +68,7 @@ export const HeroBlock = styled.div`
 
     @media screen and (max-width: 768px)
     {
+
         .hero_subject{
             align-items: center;
         }
@@ -74,21 +76,24 @@ export const HeroBlock = styled.div`
         .hero_content{
             flex-direction: column-reverse;
             padding: 2rem;
+            margin-right: 1rem;
         }
 
         .hero_title_block{
             width:100%;
-            margin-bottom: 1rem;
+            margin-bottom: 4rem;
 
             & > h1{
-                font-size: 2rem;
+                font-size: 8vw;
+                text-align: center;
                 font-weight: bold;
                 margin-bottom: 1rem; 
                 color: ${props => props.theme.colors.text};
             }
 
             & > h2{
-                font-size: 0.75rem;
+                font-size: 3vw;
+                text-align: center;
                 font-weight: 1;
                 margin-bottom: 1rem; 
                 color: ${props => props.theme.colors.text};
@@ -96,6 +101,7 @@ export const HeroBlock = styled.div`
         }
 
         .hero_image{
+            margin-left: 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
