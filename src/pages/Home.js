@@ -28,7 +28,7 @@ const Home = () => (
               </div>
             </div>
           </HeroBlock>
-          <AboutBlock>
+          <AboutBlock id='about'>
             <div className='about_content'>
               <h1>About</h1>
               <Grid>

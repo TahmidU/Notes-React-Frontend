@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Nav, NavBrand, NavLink, Bars, NavMenu, NavBtnMenu, NavBtn } from '../styles/Navbar';
+import { Nav, NavBrand, NavLink, NavHashLink, Bars, NavMenu, NavBtnMenu, NavBtn } from '../styles/Navbar';
 
 export class Navbar extends Component {
     
@@ -18,8 +18,8 @@ export class Navbar extends Component {
                 <Bars />
                 <NavMenu>
                   <NavLink to='/' activeStyle>Home</NavLink>
-                  <NavLink to='/' activeStyle>About</NavLink>
-                  <NavLink to='/' activeStyle>Dashboard</NavLink>
+                  <NavHashLink smooth to='/#about' activeStyle>About</NavHashLink>
+                  <NavLink to='/' activeStyle>Noteboard</NavLink>
                 </NavMenu>
                 <NavBtnMenu>
                     <NavBtn to='/'>Register</NavBtn>

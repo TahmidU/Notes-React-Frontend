@@ -117,6 +117,8 @@ export const AboutBlock = styled.div`
     display: flex;
     align-items: center;
     align-self: center;
+    justify-content: center;
+    justify-self: center;
     width: 80%;
     flex-grow: 1;
     margin-top: 2rem;
