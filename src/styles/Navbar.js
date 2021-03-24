@@ -2,7 +2,6 @@ import {NavLink as Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import {FaBars} from 'react-icons/fa';
 import styled from 'styled-components';
-import {BtnLink, BtnMenu} from '../components/Button';
 
 export const Nav = styled.nav`
     background: ${props => props.theme.colors.primary};
@@ -19,7 +18,7 @@ export const NavBrand = styled(Link)`
     justify-content: start;
 
     .nav_icon_container{
-        width: 120px;
+        width: 110px;
         height: 40px;
     }
 
@@ -46,6 +45,7 @@ export const NavLink = styled(Link)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+
 `;
 
 export const NavHashLink = styled(HashLink)`
@@ -84,18 +84,4 @@ export const NavMenu = styled.div`
     {
         display: none;
     }
-`;
-
-export const NavBtnMenu = styled(BtnMenu)`
-    justify-content: flex-end;
-    width: 100vw;
-    margin-right: 1.5rem;
-    @media screen and (max-width: 768px)
-    {
-        display: none;
-    }
-`;
-
-export const NavBtn = styled(BtnLink)`
-    margin-left: 1.5rem;
 `;

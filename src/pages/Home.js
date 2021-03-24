@@ -1,5 +1,5 @@
 import React from 'react';
-import { BtnLink } from '../components/Button';
+import { BtnLink } from '../styles/Button';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import Testimony from '../components/Testimony';
@@ -41,7 +41,7 @@ const Home = () => (
                   </div>
                   <div className='grid_paragraph'>
                     <p>
-                      Create an account for free and have access to unlimited storage.
+                      Create notes and have access to unlimited storage.
                     </p>
                   </div>
                 </GridUnit>
@@ -80,7 +80,7 @@ const Home = () => (
                   </div>
                   <div className='grid_paragraph'>
                     <p>
-                      All your notes; organised and kept safe online 24/7.
+                      All your notes; organised and online 24/7.
                     </p>
                   </div>
                   </GridUnit>
