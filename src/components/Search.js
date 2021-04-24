@@ -16,7 +16,7 @@ export class Search extends Component{
 
         this.handleSearchValueChange = this.handleSearchValueChange.bind(this);
         this.handleSearchValueSubmit = this.handleSearchValueSubmit.bind(this);
-        //this.handleOnClick = this.handleOnClick.bind(this);
+        //this.deleteItem = this.deleteItem(this);
     }
 
     componentDidMount(){
@@ -81,15 +81,9 @@ export class Search extends Component{
                 <li key={note.id} className='card'>
                     <div className='card_top'>
                         {note.title}
-                        <div className='card_buttons'>
-                            <button type='button' className='card_image'>
-                                <img src={require('../img/edit.svg')} alt='trash' />
-                            </button>
-                            <button type='button' onClick={() => this.deleteItem(note.id)} className='card_image'>
-                                <img src={require('../img/trash.svg')} alt='trash' />
-                            </button>
-                        </div>
-
+                        <button type='button' onClick={() => this.deleteItem(note.id)} className='card_image'>
+                            <img src={require('../img/trash.svg')} alt='trash' />
+                        </button>
                     </div>
                     <div className='card_bottom'>
                         <p>
