@@ -28,3 +28,20 @@ export const BtnLink = styled(Link)`
     }
 
 `;
+
+export const ActionBtn = styled(Link)`
+
+    background-color: #007bff;
+    transition: background-color 0.2s ease;
+    border: white;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    height: 2rem;
+    padding: 0.4rem 1rem;
+    
+    &:hover{
+        background-color: #59a9ff;
+    }
+`;

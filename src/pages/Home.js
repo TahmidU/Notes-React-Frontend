@@ -21,7 +21,7 @@ const Home = () => (
                     anywhere.
                   </h2>
                 </div>
-                <BtnLink to="/">Get started for free!</BtnLink>
+                <BtnLink to="/noteboard">Get started for free!</BtnLink>
               </div>
               <div className='hero_image'>
                 <img src={require('../img/hero_image.svg')} alt='hero_image'/>

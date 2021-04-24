@@ -8,6 +8,10 @@ export const Nav = styled.nav`
     height: 6rem;
     display: flex;
     z-index: 10;
+
+    .toggle-menu:checked ~ .nav_icon_container{
+            width: 100rem;
+    }
 `;
 
 export const NavBrand = styled(Link)`
@@ -64,6 +68,8 @@ export const Bars = styled(FaBars)`
 
     @media screen and (max-width: 768px)
     {
+
+
         display: block;
         position: absolute;
         align-self: center;
@@ -82,6 +88,34 @@ export const NavMenu = styled.div`
 
     @media screen and (max-width: 768px)
     {
-        display: none;
+        //display: none;
+    }
+`;
+
+export const MenuWrap = styled.div`
+    display: none;
+    //background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+
+`;
+
+export const Menu = styled.div`
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow: hidden;
+
+    &>ul{
+        list-style-type: none;
     }
 `;

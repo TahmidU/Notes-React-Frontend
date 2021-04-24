@@ -6,6 +6,7 @@ import Security from './pages/Security';
 import Legal from './pages/Legal';
 import Privacy from './pages/Privacy';
 import Noteboard from './pages/Noteboard';
+import AddNote from './pages/AddNote';
 import ScrollToTop from './util/ScrollToTop';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/legal' component={Legal}/>
           <Route path='/privacy' component={Privacy}/>
           <Route path='/noteboard' component={Noteboard}/>
+          <Route path='/add-note' component={AddNote}/>
         </Switch>
       </ScrollToTop>
     </Router>
